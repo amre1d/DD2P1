@@ -74,7 +74,6 @@ XAC1 N2 A VPWR VPWR sky130_fd_pr__pfet_01v8 W=3.36 L=0.15
 XAC2 Y C N2 VPWR sky130_fd_pr__pfet_01v8 W=3.36 L=0.15
 XBC1 N3 B VPWR VPWR sky130_fd_pr__pfet_01v8 W=3.36 L=0.15
 XBC2 Y C N3 VPWR sky130_fd_pr__pfet_01v8 W=3.36 L=0.15
-
 XABN1 Y A N4 VGND sky130_fd_pr__nfet_01v8 W=1.68 L=0.15
 XABN2 N4 B VGND VGND sky130_fd_pr__nfet_01v8 W=1.68 L=0.15
 XACN1 Y A N5 VGND sky130_fd_pr__nfet_01v8 W=1.68 L=0.15
@@ -82,3 +81,33 @@ XACN2 N5 C VGND VGND sky130_fd_pr__nfet_01v8 W=1.68 L=0.15
 XBCN1 Y B N6 VGND sky130_fd_pr__nfet_01v8 W=1.68 L=0.15
 XBCN2 N6 C VGND VGND sky130_fd_pr__nfet_01v8 W=1.68 L=0.15
 .ends maj3x1
+
+.subckt maj3x2 A B C Y VPWR VGND
+XAB1 N1 A VPWR VPWR sky130_fd_pr__pfet_01v8 W=6.72 L=0.15
+XAB2 Y B N1 VPWR sky130_fd_pr__pfet_01v8 W=6.72 L=0.15
+XAC1 N2 A VPWR VPWR sky130_fd_pr__pfet_01v8 W=6.72 L=0.15
+XAC2 Y C N2 VPWR sky130_fd_pr__pfet_01v8 W=6.72 L=0.15
+XBC1 N3 B VPWR VPWR sky130_fd_pr__pfet_01v8 W=6.72 L=0.15
+XBC2 Y C N3 VPWR sky130_fd_pr__pfet_01v8 W=6.72 L=0.15
+XABN1 Y A N4 VGND sky130_fd_pr__nfet_01v8 W=3.36 L=0.15
+XABN2 N4 B VGND VGND sky130_fd_pr__nfet_01v8 W=3.36 L=0.15
+XACN1 Y A N5 VGND sky130_fd_pr__nfet_01v8 W=3.36 L=0.15
+XACN2 N5 C VGND VGND sky130_fd_pr__nfet_01v8 W=3.36 L=0.15
+XBCN1 Y B N6 VGND sky130_fd_pr__nfet_01v8 W=3.36 L=0.15
+XBCN2 N6 C VGND VGND sky130_fd_pr__nfet_01v8 W=3.36 L=0.15
+.ends maj3x2
+
+.subckt maj3x4 A B C Y VPWR VGND
+XAB1 N1 A VPWR VPWR sky130_fd_pr__pfet_01v8 W=13.44 L=0.15
+XAB2 Y B N1 VPWR sky130_fd_pr__pfet_01v8 W=13.44 L=0.15
+XAC1 N2 A VPWR VPWR sky130_fd_pr__pfet_01v8 W=13.44 L=0.15
+XAC2 Y C N2 VPWR sky130_fd_pr__pfet_01v8 W=13.44 L=0.15
+XBC1 N3 B VPWR VPWR sky130_fd_pr__pfet_01v8 W=13.44 L=0.15
+XBC2 Y C N3 VPWR sky130_fd_pr__pfet_01v8 W=13.44 L=0.15
+XABN1 Y A N4 VGND sky130_fd_pr__nfet_01v8 W=6.72 L=0.15
+XABN2 N4 B VGND VGND sky130_fd_pr__nfet_01v8 W=6.72 L=0.15
+XACN1 Y A N5 VGND sky130_fd_pr__nfet_01v8 W=6.72 L=0.15
+XACN2 N5 C VGND VGND sky130_fd_pr__nfet_01v8 W=6.72 L=0.15
+XBCN1 Y B N6 VGND sky130_fd_pr__nfet_01v8 W=6.72 L=0.15
+XBCN2 N6 C VGND VGND sky130_fd_pr__nfet_01v8 W=6.72 L=0.15
+.ends maj3x4
