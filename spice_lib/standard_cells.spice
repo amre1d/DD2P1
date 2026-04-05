@@ -19,3 +19,8 @@ XMP Y A VPWR VPWR sky130_fd_pr__pfet_01v8 W=3.36 L=0.15
 XMN Y A VGND VGND sky130_fd_pr__nfet_01v8 W=3.36 L=0.15
 XMP Y A VPWR VPWR sky130_fd_pr__pfet_01v8 W=6.72 L=0.15
 .ends invx4
+
+.subckt invx8 A Y VPWR VGND
+XMN Y A VGND VGND sky130_fd_pr__nfet_01v8 W=6.72 L=0.15
+XMP Y A VPWR VPWR sky130_fd_pr__pfet_01v8 W=13.44 L=0.15
+.ends invx8
