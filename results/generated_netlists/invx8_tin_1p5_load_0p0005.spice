@@ -1,0 +1,16 @@
+.include "/home/aamreidd/sky130_project/spice_lib/standard_cells.spice"
+
+VDD VPWR 0 1.8
+VIN A 0 PULSE(0 1.8 0.1n 1.5n 1.5n 5n 10n)
+Cload Y 0 0.0005p
+
+XU1 A Y VPWR 0 invx8
+
+.tran 0.001n 20n
+
+.measure tran tphl trig v(A) val=0.9 rise=1 targ v(Y) val=0.9 fall=1
+.measure tran tplh trig v(A) val=0.9 fall=1 targ v(Y) val=0.9 rise=1
+.measure tran trise trig v(Y) val=0.36 rise=1 targ v(Y) val=1.44 rise=1
+.measure tran tfall trig v(Y) val=1.44 fall=1 targ v(Y) val=0.36 fall=1
+
+.end
