@@ -38,3 +38,17 @@ XMP2 Y B VPWR VPWR sky130_fd_pr__pfet_01v8 W=3.36 L=0.15
 XMN1 Y A N1 VGND sky130_fd_pr__nfet_01v8 W=3.36 L=0.15
 XMN2 N1 B VGND VGND sky130_fd_pr__nfet_01v8 W=3.36 L=0.15
 .ends nand2x2
+
+.subckt nand2x4 A B Y VPWR VGND
+XMP1 Y A VPWR VPWR sky130_fd_pr__pfet_01v8 W=6.72 L=0.15
+XMP2 Y B VPWR VPWR sky130_fd_pr__pfet_01v8 W=6.72 L=0.15
+XMN1 Y A N1 VGND sky130_fd_pr__nfet_01v8 W=6.72 L=0.15
+XMN2 N1 B VGND VGND sky130_fd_pr__nfet_01v8 W=6.72 L=0.15
+.ends nand2x4
+
+.subckt nor2x1 A B Y VPWR VGND
+XMP1 Y A N2 VPWR sky130_fd_pr__pfet_01v8 W=3.36 L=0.15
+XMP2 N2 B VPWR VPWR sky130_fd_pr__pfet_01v8 W=3.36 L=0.15
+XMN1 Y A VGND VGND sky130_fd_pr__nfet_01v8 W=0.84 L=0.15
+XMN2 Y B VGND VGND sky130_fd_pr__nfet_01v8 W=0.84 L=0.15
+.ends nor2x1
