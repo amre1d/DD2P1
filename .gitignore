@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+results/
+*.raw
+*.log
+*.out
+*.data
+
+skywater-pdk-libs-sky130_fd_pr/

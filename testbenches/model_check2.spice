@@ -1,0 +1,17 @@
+* SKY130 model check 2
+.option scale=1E-6
+
+.param mc_mm_switch=0
+
+.include "/home/aamreidd/sky130_project/skywater-pdk-libs-sky130_fd_pr/models/r+c/res_typical__cap_typical__lin.spice"
+.include "/home/aamreidd/sky130_project/skywater-pdk-libs-sky130_fd_pr/models/r+c/res_typical__cap_typical.spice"
+.include "/home/aamreidd/sky130_project/skywater-pdk-libs-sky130_fd_pr/models/corners/tt.spice"
+
+Vdd vdd 0 1.8
+Vin in 0 DC 1.8
+R1 vdd out 10k
+
+X1 out in 0 0 sky130_fd_pr__nfet_01v8
+
+.op
+.end
