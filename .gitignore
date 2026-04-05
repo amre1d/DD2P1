@@ -8,3 +8,6 @@ results/
 *.data
 
 skywater-pdk-libs-sky130_fd_pr/
+
+!results/
+!results/inverter_summary.csv
